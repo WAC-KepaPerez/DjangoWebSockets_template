@@ -118,6 +118,7 @@ This README outlines the steps necessary to set up a Django project using Django
 - Connect and test the WebSocket using browser console or a client like Postman:
 
     ```javascript
+    //Javascript file
     const ws = new WebSocket('ws://127.0.0.1:8000/ws/somepath/');
     ws.onmessage = function(event) {
         console.log('Message from server:', event.data);
