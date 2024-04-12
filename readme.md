@@ -35,7 +35,18 @@ This README outlines the steps necessary to set up a Django project using Django
 4. **Configure settings**:
 
     - Add 'daphne' to `INSTALLED_APPS` in `settings.py`.
+    ```python
+      #settings.py
+        INSTALLED_APPS = [
+        'daphne',
+    ...
+    ]
+    ```
     - Set `ASGI_APPLICATION` to `'myproject.asgi.application'`.
+    ```python
+    #settings.py
+    ASGI_APPLICATION = 'DjWebSockets.asgi.application'
+    ```
 
 5. **Set up ASGI application**:
 
