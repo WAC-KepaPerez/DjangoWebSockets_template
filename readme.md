@@ -36,22 +36,23 @@ This README outlines the steps necessary to set up a Django project using Django
 
     - Add 'daphne' to `INSTALLED_APPS` in `settings.py`.
     ```python
-      #settings.py
-        INSTALLED_APPS = [
+    #settings.py
+
+    INSTALLED_APPS = [
         'daphne',
-    ...
+        ...
     ]
     ```
     - Set `ASGI_APPLICATION` to `'myproject.asgi.application'`.
     ```python
     #settings.py
+
     ASGI_APPLICATION = 'DjWebSockets.asgi.application'
     ```
 
 5. **Set up ASGI application**:
 
     - Create/edit `asgi.py` in your project directory with the following content:
-
     ```python
     import os
     from django.core.asgi import get_asgi_application
@@ -91,7 +92,7 @@ This README outlines the steps necessary to set up a Django project using Django
 8. **Run migrations and start the server**:
 
     ```bash
-    python manage.py migrate
+    python manage.py migrate #if you have db connection
     python manage.py runserver
     ```
 
