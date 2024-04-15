@@ -9,7 +9,7 @@ This README outlines the steps necessary to set up a Django project using Django
 - Channels 3.x
  -Daphne
 
-## Installation
+## How to install/use WebSocket in Django
 
 1. **Set up a virtual environment** (optional but recommended):
 
