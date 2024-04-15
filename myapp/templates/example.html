@@ -1,0 +1,10 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<h1>Example 01</h1>
+<p>En este ejemplo, el cliente envía un número al servidor a través de WebSockets. Luego, el servidor cuenta desde 1 hasta ese número con un retraso de 3 segundos entre cada conteo y envía cada conteo de vuelta al cliente.</p>
+<input type="number" id="numero"/>
+<button onclick="enviarNumero()" id="sendButton">Enviar</button>
+<h2>Contador:<span id="count"></span></h2>
+<div id="contador"></div>
+{% endblock %} 

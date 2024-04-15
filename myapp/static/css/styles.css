@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    gap: 25px;
+   
+}
+nav a{
+    color: white;
+    padding: 10px 20px;
+    background-color: #1c76c5;
+    border-radius: 5px;
+}
+nav a:active{
+    color: whitesmoke;
+}
+.countItem{
+    padding: 15px;
+    background-color: #326897;
+    border-radius: 5px;
+}
+.finishItem{
+    padding: 15px;
+    background-color: #359732;
+    border-radius: 5px;
+}
+#contador{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
